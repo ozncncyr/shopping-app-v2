@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1E1E1;
+    text-align: center;
+}
+
+header {
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+}
+
+.products, .cart, .add-product {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid crimson;
+    border-radius: 10px;
+    color: crimson;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+
+.product {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid crimson;
+}
+
+button {
+    background-color: crimson;
+    font-weight: 600;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+#add-product-form input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+#add-product-form button {
+    margin-top: 10px;
+}
+
+#product-list img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
