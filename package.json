@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://ozncncyr.github.io/shopping-app-v2",
+  "author": {
+    "name": "Ozan Can CUYAR"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.2.0"
   },
   "dependencies": {
