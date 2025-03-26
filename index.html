@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crimson TechnoMarkt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <script type="module" crossorigin src="/shopping-app-v2/assets/index-D7AdPuaT.js"></script>
+    <link rel="stylesheet" crossorigin href="/shopping-app-v2/assets/index-BvuUI9Nu.css">
+  </head>
+  <body>
+    <header>
+      <h1>Crimson TechnoMarkt</h1>
+    </header>
+
+    <main>
+      <section class="products">
+        <h2>Ürünler</h2>
+        <div id="product-list"></div>
+      </section>
+
+      <section class="add-product">
+        <h2>Yeni Ürün Ekle</h2>
+        <form id="add-product-form">
+          <input
+            type="text"
+            id="product-name"
+            placeholder="Ürün Adı"
+            required
+          />
+          <input
+            type="number"
+            id="product-price"
+            placeholder="Ürün Fiyatı"
+            required
+          />
+          <input
+            type="number"
+            id="product-quantity"
+            placeholder="Ürün Adedi"
+            required
+          />
+          <input
+            type="text"
+            id="product-image"
+            placeholder="Resim URL'si"
+            required
+          />
+          <button type="submit">Ürün Ekle</button>
+        </form>
+      </section>
+
+      <section class="cart">
+        <h2>Sepet</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Toplam:</strong> <span id="total-price">0</span> TL</p>
+        <button id="complete-order">Siparişi Tamamla</button>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Y9wHu6O9WM4bnS2fy",
+        });
+      })();
+    </script>
+  </body>
+</html>
