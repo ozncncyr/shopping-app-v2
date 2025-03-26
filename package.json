@@ -5,19 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/shopping-app-v2/",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
   },
   "homepage": "https://ozncncyr.github.io/shopping-app-v2",
   "author": {
-    "name": "Ozan Can CUYAR"
+    "name": "Ozan Can CUYAR",
+    "email": "ozncncyr@outlook.com",
+    "github": "https://github.com/ozncncyr"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "vite": "^6.2.0"
   },
   "dependencies": {
-    "emailjs": "^4.0.3"
+    "emailjs": "^4.0.3",
+    "izitoast": "^1.4.0"
   }
 }
